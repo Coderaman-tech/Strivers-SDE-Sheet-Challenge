@@ -29,5 +29,7 @@ Thus we can solve this problem with a single loop.
 This algorithm contains 3 pointers i.e. low, mid, and high, and 3 main rules.  The rules are the following:
 
 arr[0….low-1] contains 0. [Extreme left part]
+
 arr[low….mid-1] contains 1.
+
 arr[high+1….n-1] contains 2. [Extreme right part], n = size of the array
