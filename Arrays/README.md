@@ -25,7 +25,7 @@ Here, we will iterate the given array with a single loop and while iterating we 
 
 Thus we can solve this problem with a single loop.
 
-# Sort an array of 0s, 1s and 2s
+# 5. Sort an array of 0s, 1s and 2s
 This algorithm contains 3 pointers i.e. low, mid, and high, and 3 main rules.  The rules are the following:
 
 arr[0….low-1] contains 0. [Extreme left part]
@@ -33,3 +33,6 @@ arr[0….low-1] contains 0. [Extreme left part]
 arr[low….mid-1] contains 1.
 
 arr[high+1….n-1] contains 2. [Extreme right part], n = size of the array
+
+# 6.Best Time to Buy and Sell Stock
+We can maintain a minimum from the start of the array and compare it with every element of the array, if it is greater than the minimum then take the difference and maintain it in max, otherwise update the minimum.
