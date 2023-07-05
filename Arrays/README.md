@@ -24,3 +24,10 @@ The intuition of the algorithm is not to consider the subarray as a part of the 
 Here, we will iterate the given array with a single loop and while iterating we will add the elements in a sum variable. Now, if at any point the sum becomes less than 0, we will set the sum as 0 as we are not going to consider any subarray with a negative sum. Among all the sums calculated, we will consider the maximum one.
 
 Thus we can solve this problem with a single loop.
+
+# Sort an array of 0s, 1s and 2s
+This algorithm contains 3 pointers i.e. low, mid, and high, and 3 main rules.  The rules are the following:
+
+arr[0….low-1] contains 0. [Extreme left part]
+arr[low….mid-1] contains 1.
+arr[high+1….n-1] contains 2. [Extreme right part], n = size of the array
