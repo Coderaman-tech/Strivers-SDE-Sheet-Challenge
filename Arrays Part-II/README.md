@@ -3,3 +3,7 @@ By observation, we see that the first column of the original matrix is the rever
 
 # 2. Merge Intervals
 Simply take two variable start and end and change accordingly.
+
+# 3.Merge Sorted Array
+Simply from zero start putting the other araay value then sort.
+For alter sol. refer [https://takeuforward.org/data-structure/merge-two-sorted-arrays-without-extra-space/]
