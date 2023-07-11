@@ -20,4 +20,5 @@ iii) After finding this position differentiate and xor all the numbers and got t
 
 iv) And for this simply interate in array and increase counter for zero variable if it is equal to 2 then it is repeating or not then missing.
 
-
+# 6. Count Inversions
+Use Merge sort approach
