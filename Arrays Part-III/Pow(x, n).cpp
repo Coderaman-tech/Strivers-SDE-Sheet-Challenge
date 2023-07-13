@@ -15,7 +15,7 @@ public:
           ans*= x;
           return ans;
        }
-       return ans;
+      
    }
     double myPow(double x, int n) {
         double ans=0.0;
