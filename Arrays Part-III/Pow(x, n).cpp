@@ -10,8 +10,9 @@ public:
           return ans;
        }
        else{
-          double b=func(x,n-1,ans);
-          ans= x*b;
+          double b=func(x,(n-1)/2,ans);
+          ans=b*b;
+          ans*= x;
           return ans;
        }
        return ans;
