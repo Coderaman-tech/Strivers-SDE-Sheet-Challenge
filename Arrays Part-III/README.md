@@ -14,3 +14,8 @@ After traversing the whole array, we will check the element stored in the variab
 
 # 4. Majority Element (n/3 times)
 It is same as previous question but it is confirmed that maximum two number possible whose count is >n/3. And for that two counter is used to track the element. See solution it is better to understand.
+
+# 5. Unique Paths
+Approach 1 -> Use DP to store the count of path to reach at the end.
+
+Approach 2 -> There is a pattern in this to reach the destination. Use this link [https://takeuforward.org/data-structure/grid-unique-paths-count-paths-from-left-top-to-the-right-bottom-of-a-matrix/]
