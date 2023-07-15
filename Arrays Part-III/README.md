@@ -19,3 +19,6 @@ It is same as previous question but it is confirmed that maximum two number poss
 Approach 1 -> Use DP to store the count of path to reach at the end.
 
 Approach 2 -> There is a pattern in this to reach the destination. Use this link [https://takeuforward.org/data-structure/grid-unique-paths-count-paths-from-left-top-to-the-right-bottom-of-a-matrix/]
+
+# 6. Reverse Pairs
+Do it by merge sort algorithm but take care that count of pairs should be done initially then do process of merge sort in merge function and take temp array only the required size to remove TLE.
