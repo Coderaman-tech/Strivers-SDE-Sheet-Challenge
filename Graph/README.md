@@ -6,3 +6,6 @@ For doing BFS traversal use a queue and insert first starting node and take them
 
 # 4. Detect A cycle in Undirected Graph using BFS
 The intuition is that we start from a node, and start doing BFS level-wise, if somewhere down the line, we visit a single node twice, it means we came via two paths to end up at the same node. It implies there is a cycle in the graph because we know that we start from different directions but can arrive at the same node only if the graph is connected or contains a cycle, otherwise we would never come to the same node again.So maintain a queue for current node and its parent if the aj node is visited and the parent of it in queue is not same as its original parent then it contains cycle.
+
+# 5. Create Detect A cycle in Undirected Graph using DFS.cpp
+Same as previous approach here only use DFS to solve the problem.
