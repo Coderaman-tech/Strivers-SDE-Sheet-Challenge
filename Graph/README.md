@@ -10,6 +10,9 @@ The intuition is that we start from a node, and start doing BFS level-wise, if s
 # 5. Create Detect A cycle in Undirected Graph using DFS.cpp
 Same as previous approach here only use DFS to solve the problem.
 
+# 7. Detect A cycle in a Directed Graph using BFS
+It is done by Khan's Algorithm used in Topo sort.If DAG contains a cycle then it is impossible to find all the node in topo sort,so,just count the size of topo sort if it equal to the no. of nodes then graph doesn't contain cycle and if not then it contains the cycle.
+
 # 8. Topological Sort BFS
 In this we use concept of indegree.If node has indegree 0,it ensures that noone will call him.So firstly put all node whose indegree is 0 in queue and pop one by one and reduce its adjcacent node indegree and push node only if node has indegree 0. This is Kahn's Algorithm.
 
