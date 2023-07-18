@@ -9,3 +9,6 @@ The intuition is that we start from a node, and start doing BFS level-wise, if s
 
 # 5. Create Detect A cycle in Undirected Graph using DFS.cpp
 Same as previous approach here only use DFS to solve the problem.
+
+# 9. Topological Sort DFS
+For topo sort by dfs, we use stack which insert the node after all its recursion call over means at the end which ensures that there will be noone present to call that node which is a statement of toposort that u appears before v and in ordering that v can't call by anyone.
