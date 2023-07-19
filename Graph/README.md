@@ -24,3 +24,6 @@ For topo sort by dfs, we use stack which insert the node after all its recursion
 
 # 11. Bipartite Check using BFS
 Use a color array with -1 all entry in it.Use queue for BFS , store first node in queue and mark its color 0 and go to its adjacent and mark opposite to the color of node which pop from the queue . If the adjcacent color is visited and color equal to the node then it is not bipartite.If queue is empty then graph is bipartite.
+
+# 12. Bipartite Check using DFS
+Just take one variable color which give current color should insert and col array which maintain all node color and do DFS.
