@@ -22,6 +22,9 @@ In this we use concept of indegree.If node has indegree 0,it ensures that noone 
 # 9. Topological Sort DFS
 For topo sort by dfs, we use stack which insert the node after all its recursion call over means at the end which ensures that there will be noone present to call that node which is a statement of toposort that u appears before v and in ordering that v can't call by anyone.
 
+# 10. Number of Distinct Islands
+Every island has a dimension so store it in set.To found two island same or not use base row and col which helps to differentiate between two islands.
+
 # 11. Bipartite Check using BFS
 Use a color array with -1 all entry in it.Use queue for BFS , store first node in queue and mark its color 0 and go to its adjacent and mark opposite to the color of node which pop from the queue . If the adjcacent color is visited and color equal to the node then it is not bipartite.If queue is empty then graph is bipartite.
 
