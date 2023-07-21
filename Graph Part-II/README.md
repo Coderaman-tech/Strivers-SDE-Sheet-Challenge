@@ -16,3 +16,8 @@ Make a matrix of n*n nodes and put 1e9 in it and 0 in i,i position and do traver
 
 # 5. MST using Prim's Algo
 For find the MST,Prim's algo visit all the edges and choose minimum edges on by one and for it we use minimum priority queue.Once a node is visited then we don;t follow that path because previously path is the minimum edges of the MST.
+
+# 6. Kruskal’s Minimum Spanning Tree Algorithm
+It can be solved by disjoint set data structure.
+
+Firstly sort the all the edges on the basis of weight.And then taverse each edges one by one if the ultimate_parent of u and v is not same then it is our edges of MST and then call for UnionByRank to merge them and make them a component otherwise skip that edges and this thing will be done by Disjoint set ds.
