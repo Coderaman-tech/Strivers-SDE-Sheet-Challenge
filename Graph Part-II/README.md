@@ -13,3 +13,6 @@ It is used only for directed graph and able to find negative cycle. Just apply o
 It is only for Directed graph and able to find negative cycle.
 
 Make a matrix of n*n nodes and put 1e9 in it and 0 in i,i position and do traversal via all node in the matrix of distance at the end we can find the minimum distance between all node. To find graph contain or not - traverse the matrix if i,i position is <0 then it means that there is negative cycle because minimum dist between same node is always be 0.
+
+# 5. MST using Prim's Algo
+For find the MST,Prim's algo visit all the edges and choose minimum edges on by one and for it we use minimum priority queue.Once a node is visited then we don;t follow that path because previously path is the minimum edges of the MST.
