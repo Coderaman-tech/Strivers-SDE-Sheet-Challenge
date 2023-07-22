@@ -13,3 +13,19 @@ Then we print that node value.
 Then we recursively visit the right child.
 
 If we encounter a node pointing to NULL, we simply return to its parent.
+
+# 2. Preorder Traversal
+
+## By Iterative
+
+In preorder traversal, the tree is traversed in this way: root, left, right. When we visit a node, we print its value, and then we want to visit the left child followed by the right child. The fundamental problem we face in this scenario is that there is no way that we can move from a child to a parent. To solve this problem, we use an explicit stack data structure. While traversing we can insert node values to the stack in such a way that we always get the next node value at the top of the stack.
+
+## By Recusion
+
+We first visit the root node and before visiting its children we print its value.
+
+After this, we recursively visit its left child.
+
+Then we recursively visit the right child.
+
+If we encounter a node pointing to NULL, we simply return to its parent.
