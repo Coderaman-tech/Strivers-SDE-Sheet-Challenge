@@ -29,3 +29,5 @@ After this, we recursively visit its left child.
 Then we recursively visit the right child.
 
 If we encounter a node pointing to NULL, we simply return to its parent.
+
+# 3. Postorder Traversal
