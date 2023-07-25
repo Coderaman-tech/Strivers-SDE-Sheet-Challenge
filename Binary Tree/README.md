@@ -39,3 +39,11 @@ If we encounter a node pointing to NULL, we simply return to its parent.
  # By one stack
 
  First we need to understand what we do in a postorder traversal. We first explore the left side of the root node and keep on moving left until we encounter a node pointing to NULL. As now there is nothing more to traverse on the left, we move to the immediate parent(say node P) of that NULL node. Now we again start our left exploration from the right child of that node P. We will print a node’s value only when we have returned from its both children.
+
+# LeftView and RightView Of Binary Tree
+In the Right view code first, you have to call the recursive function for the right then the left node
+
+AND
+
+In the Right view code first, you have to call the recursive function for the Left than the right node
+Initially if level is equal to the size of vector then push the val of root into it then call recursion as mentioned above.
