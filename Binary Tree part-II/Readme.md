@@ -7,3 +7,6 @@
 Calculate left and right height of each node and diameter is lh+rh+1 so take maximum of diameter of each node every time. But TC will be O(n*n) because to calculate height many times.
 ## 2. Optimal Approach
 We can find diameter of a node while calculating height which helps to not calculate height many times.By doing that we take a variable diameter and use it via reference and update in every step by taking the maximum of currDiamter with lh+rh+1;
+
+# Binary Tree Level Order Traversal
+Level Order Traversal means we have to print node level wise and maintain order, for that we have to use queue where first we have to add root node and NULL.NULL is used to indicate that we complete one level and help to track level.Pop node from queue if node is not null means add left and right not if these are not null but if node is null and queue is not empty means we complete that level then again push NULL in queue for next level.Run these process till queue is not empty.
