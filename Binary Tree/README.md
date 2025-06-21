@@ -41,12 +41,14 @@ If we encounter a node pointing to NULL, we simply return to its parent.
  First we need to understand what we do in a postorder traversal. We first explore the left side of the root node and keep on moving left until we encounter a node pointing to NULL. As now there is nothing more to traverse on the left, we move to the immediate parent(say node P) of that NULL node. Now we again start our left exploration from the right child of that node P. We will print a node’s value only when we have returned from its both children.
 
 # 4. LeftView and RightView Of Binary Tree
-In the Right view code first, you have to call the recursive function for the right then the left node
-
-# 5.
+In the Left view code first, you have to call the recursive function for the Left than the right node
+Initially if level is equal to the size of vector then push the val of root into it then call recursion as mentioned above.
 
 AND
 
-In the Right view code first, you have to call the recursive function for the Left than the right node
+In the Right view code first, you have to call the recursive function for the right than the left node
 Initially if level is equal to the size of vector then push the val of root into it then call recursion as mentioned above.
+
+# 5. Vertical Order Traversal of Binary Tree
+Vertical order can be tracked by same approach as top or bottom view but here we have to also take care of multiple nodes comes into the savel level in same vertical line and for that we use 2d map which insert node on the basis of vertical and level. Starting with the root node, we enqueue it with initial vertical and level values (0, 0). During traversal, for each dequeued node, we update the map by inserting the node value at its corresponding coordinates and enqueue its left and right children with adjusted vertical and level information. When traversing to the left child, the vertical value decreases by 1 and the level increases by 1, while traversal to the right child leads to an increase in both vertical and level by 1.
 
