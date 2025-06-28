@@ -1,0 +1,3 @@
+# 1. Find Nth root of a number
+The primary objective of the Binary Search algorithm is to efficiently determine the appropriate half to eliminate, thereby reducing the search space by half. It does this by determining a specific condition that ensures that the target is not present in that half.
+Now, we are not given any sorted array on which we can apply binary search. But, if we observe closely, we can notice that our answer space i.e. [1, n] is sorted. So, we will apply binary search on the answer space.If mid is less than our target number go to right side and if greater go to left side else or mid element is our answer.
