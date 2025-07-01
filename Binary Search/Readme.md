@@ -45,3 +45,6 @@ Steps are -
     If l1 > r2: This implies that we have considered more elements from arr1[] than necessary. So, we have to take less elements from arr1[] and more from arr2[]. In such a scenario, we should try smaller values of x. To achieve this, we will eliminate the right half (high = mid1-1).
     If l2 > r1: This implies that we have considered more elements from arr2[] than necessary. So, we have to take less elements from arr2[] and more from arr1[]. In such a scenario, we should try bigger values of x. To achieve this, we will eliminate the left half (low = mid1+1).
     Finally, outside the loop, we will include a dummy return statement just to avoid warnings or errors.
+
+# 5. K-th element of two Arrays
+Same question as a median of two sorted array but here in left side we fix that left array should contain k elements and other remains for that we have to change low and high parameter.
