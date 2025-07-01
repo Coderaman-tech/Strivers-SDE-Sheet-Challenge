@@ -48,3 +48,7 @@ Steps are -
 
 # 5. K-th element of two Arrays
 Same question as a median of two sorted array but here in left side we fix that left array should contain k elements and other remains for that we have to change low and high parameter.
+consider the example: n1=4, n2=6, k=8
+if we assume low=0 and high=n1
+it means there is a possibility of taking 0 elements from n1 arr and remaining elements from n2 arr (which has only 6 elements but we need 8 elements at left so its mandatory to consider atleast 2 elements from left arr)  so low = max(0, k-n2)
+and for high consider the scenario n1=4, n2=6, k=2 where need to have only 2 elements at left so should consider atmost 2 elements from n1 arr so high = min(k, n1)
