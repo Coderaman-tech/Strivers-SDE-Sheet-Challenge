@@ -22,7 +22,8 @@ The steps are as follows:
     Once, the ‘mid’ points to the target, the index will be returned.
     This process will be inside a loop and the loop will continue until low crosses high. If no index is found, we will return -1.
 # 4.  Median of Two Sorted Arrays
-I recomment please watch this video - https://www.youtube.com/watch?v=F9c7LpRZWVQ
+I recommend please watch this video - https://www.youtube.com/watch?v=F9c7LpRZWVQ
+
 Steps are -
 
     First, we have to make sure that the arr1[] is the smaller array. If not by default, we will just swap the arrays. Our main goal is to consider the smaller array as arr1[].
