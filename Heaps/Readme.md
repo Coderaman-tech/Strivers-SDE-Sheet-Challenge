@@ -6,3 +6,8 @@ First create map which contains unique element of the array and its count in arr
 
 # 3. Merge k Sorted Arrays
 Iterate through all the arrays and push in min heap.And then pop element one by one from the heap and store in our final result array.
+
+# 4.Maximum Sum Combination
+You are given two integer arrays a[] and b[] of equal size. A sum combination is formed by adding one element from a[] and one from b[], using each index pair (i, j) at most once. Return the top k maximum sum combinations, sorted in non-increasing order.
+
+Solution- The idea is to use a max heap (priority queue). First, we sort both arrays. We then use a max heap to track the highest sum combinations, starting with the largest sum from A[n-1] + B[n-1]. At each step, we extract the maximum sum and push the next possible sums by incrementing the indices, ensuring that we always get the next largest sum efficiently. A set is used to track visited pairs, preventing duplicate computations. 
