@@ -3,3 +3,6 @@ The idea is to construct a max-heap of elements. Since the top element of the ma
 
 # 2. Top K Frequent Elements
 First create map which contains unique element of the array and its count in array then put all key value pair in max heap. After that insert first k element of priority queue in our result.
+
+# 3. Merge k Sorted Arrays
+Iterate through all the arrays and push in min heap.And then pop element one by one from the heap and store in our final result array.
